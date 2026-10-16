@@ -1,0 +1,274 @@
+{
+  "schema_version": 1,
+  "generated_at_utc": "2026-10-16T13:57:57.753796+00:00",
+  "environment": {
+    "python": "3.14.5",
+    "implementation": "CPython",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "machine": "AMD64",
+    "processor": "AMD64 Family 26 Model 68 Stepping 0, AuthenticAMD"
+  },
+  "methodology": {
+    "repeats": 3,
+    "warmups_per_variant": 1,
+    "score_perspective": "white",
+    "score_agreement": true,
+    "timing": "median wall time per search; hardware dependent",
+    "baseline": "unpruned minimax without capture ordering",
+    "ties": "first move in traversal order; equally valued moves may differ across variants"
+  },
+  "results": [
+    {
+      "position": "endgame",
+      "variant": "minimax",
+      "depth": 3,
+      "move": [
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "score": 20,
+      "nodes": 1436,
+      "leaves": 1324,
+      "cutoffs": 0,
+      "node_reduction_percent": 0.0,
+      "median_elapsed_seconds": 0.0015182998031377792,
+      "nodes_per_second": 945794.7613720985,
+      "config": {
+        "depth": 3,
+        "algorithm": "minimax",
+        "order_moves": false,
+        "node_limit": 1000000
+      }
+    },
+    {
+      "position": "endgame",
+      "variant": "alpha-beta",
+      "depth": 3,
+      "move": [
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "score": 20,
+      "nodes": 552,
+      "leaves": 479,
+      "cutoffs": 47,
+      "node_reduction_percent": 61.55988857938719,
+      "median_elapsed_seconds": 0.000708600040525198,
+      "nodes_per_second": 779000.8021885948,
+      "config": {
+        "depth": 3,
+        "algorithm": "alpha-beta",
+        "order_moves": false,
+        "node_limit": 1000000
+      }
+    },
+    {
+      "position": "endgame",
+      "variant": "alpha-beta-ordered",
+      "depth": 3,
+      "move": [
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "score": 20,
+      "nodes": 402,
+      "leaves": 331,
+      "cutoffs": 45,
+      "node_reduction_percent": 72.00557103064067,
+      "median_elapsed_seconds": 0.000700400210916996,
+      "nodes_per_second": 573957.565594795,
+      "config": {
+        "depth": 3,
+        "algorithm": "alpha-beta",
+        "order_moves": true,
+        "node_limit": 1000000
+      }
+    },
+    {
+      "position": "tactical",
+      "variant": "minimax",
+      "depth": 3,
+      "move": [
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          4
+        ]
+      ],
+      "score": 0,
+      "nodes": 4048,
+      "leaves": 3773,
+      "cutoffs": 0,
+      "node_reduction_percent": 0.0,
+      "median_elapsed_seconds": 0.004056300036609173,
+      "nodes_per_second": 997953.7912545268,
+      "config": {
+        "depth": 3,
+        "algorithm": "minimax",
+        "order_moves": false,
+        "node_limit": 1000000
+      }
+    },
+    {
+      "position": "tactical",
+      "variant": "alpha-beta",
+      "depth": 3,
+      "move": [
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          4
+        ]
+      ],
+      "score": 0,
+      "nodes": 718,
+      "leaves": 625,
+      "cutoffs": 69,
+      "node_reduction_percent": 82.26284584980237,
+      "median_elapsed_seconds": 0.0009665000252425671,
+      "nodes_per_second": 742886.6852018966,
+      "config": {
+        "depth": 3,
+        "algorithm": "alpha-beta",
+        "order_moves": false,
+        "node_limit": 1000000
+      }
+    },
+    {
+      "position": "tactical",
+      "variant": "alpha-beta-ordered",
+      "depth": 3,
+      "move": [
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          4
+        ]
+      ],
+      "score": 0,
+      "nodes": 319,
+      "leaves": 244,
+      "cutoffs": 57,
+      "node_reduction_percent": 92.11956521739131,
+      "median_elapsed_seconds": 0.0007579000666737556,
+      "nodes_per_second": 420899.8178348442,
+      "config": {
+        "depth": 3,
+        "algorithm": "alpha-beta",
+        "order_moves": true,
+        "node_limit": 1000000
+      }
+    },
+    {
+      "position": "midgame",
+      "variant": "minimax",
+      "depth": 3,
+      "move": [
+        [
+          1,
+          6
+        ],
+        [
+          0,
+          7
+        ]
+      ],
+      "score": 30,
+      "nodes": 126990,
+      "leaves": 124769,
+      "cutoffs": 0,
+      "node_reduction_percent": 0.0,
+      "median_elapsed_seconds": 0.14745529973879457,
+      "nodes_per_second": 861210.1445316158,
+      "config": {
+        "depth": 3,
+        "algorithm": "minimax",
+        "order_moves": false,
+        "node_limit": 1000000
+      }
+    },
+    {
+      "position": "midgame",
+      "variant": "alpha-beta",
+      "depth": 3,
+      "move": [
+        [
+          1,
+          6
+        ],
+        [
+          0,
+          7
+        ]
+      ],
+      "score": 30,
+      "nodes": 13073,
+      "leaves": 12518,
+      "cutoffs": 381,
+      "node_reduction_percent": 89.70548862115128,
+      "median_elapsed_seconds": 0.01868119975551963,
+      "nodes_per_second": 699794.4549111411,
+      "config": {
+        "depth": 3,
+        "algorithm": "alpha-beta",
+        "order_moves": false,
+        "node_limit": 1000000
+      }
+    },
+    {
+      "position": "midgame",
+      "variant": "alpha-beta-ordered",
+      "depth": 3,
+      "move": [
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "score": 30,
+      "nodes": 3554,
+      "leaves": 3386,
+      "cutoffs": 104,
+      "node_reduction_percent": 97.20135443735727,
+      "median_elapsed_seconds": 0.005933600012212992,
+      "nodes_per_second": 598961.8431786578,
+      "config": {
+        "depth": 3,
+        "algorithm": "alpha-beta",
+        "order_moves": true,
+        "node_limit": 1000000
+      }
+    }
+  ]
+}

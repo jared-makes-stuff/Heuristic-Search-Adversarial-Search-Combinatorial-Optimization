@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "adversarial-search-engine"
+version = "1.0.0"
+description = "Deterministic fairy-chess search with alpha-beta pruning and reproducible performance experiments"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = []
+keywords = ["alpha-beta", "minimax", "adversarial-search", "algorithms", "benchmarking"]
+
+[project.optional-dependencies]
+dev = ["ruff==0.17.1"]
+
+[project.scripts]
+search-engine = "adversarial_search.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+py-modules = ["AB", "AB_solution"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+target-version = "py312"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "I"]
